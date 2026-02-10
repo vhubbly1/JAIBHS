@@ -1,28 +1,143 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="second.html">Second</a>
-  <a href="submit.html">Submit</a>
-  <a href="about.html">About</a>
-</nav>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Submit</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Submit — JAIBHS</title>
+  <meta name="description" content="Submission guidelines and peer review process for JAIBHS." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="container">
-  <h1>Submit</h1>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="logo"></div><span>JAIBHS</span></a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="second.html">Overview</a>
+      <a href="submit.html">Submit</a>
+      <a href="about.html">About</a>
+      <a class="btn" href="#form">Open Submission Form ↓</a>
+    </nav>
+  </div>
+</header>
 
-  <form>
-    <input type="text" placeholder="Name" required><br><br>
-    <input type="email" placeholder="Email" required><br><br>
-    <textarea placeholder="Message"></textarea><br><br>
+<main class="container">
+  <section class="hero">
+    <div class="card">
+      <div class="kicker">HOW TO SUBMIT</div>
+      <h1>Submission & Peer Review</h1>
+      <p class="lead">JAIBHS accepts submissions year-round. Manuscripts are reviewed on a rolling basis and placed into the next available issue once accepted.</p>
+    </div>
+  </section>
 
-    <button type="submit">Send</button>
-  </form>
-</div>
+  <section class="section">
+    <div class="grid">
+      <div class="col-6 card">
+        <h2>Submission Requirements</h2>
+        <ul>
+          <li>Complete the online submission form</li>
+          <li>Upload your manuscript in <strong>Word (.docx)</strong> format</li>
+          <li>Include: Title page, Abstract, Main text, References (APA or Vancouver)</li>
+          <li>Include a <strong>PRISMA diagram</strong> if applicable</li>
+        </ul>
+
+        <hr class="sep" />
+
+        <h2>Fees</h2>
+        <p><strong>$55 publication fee</strong> (requested only after acceptance).</p>
+        <ul>
+          <li>No hidden fees</li>
+          <li>Need-based fee waivers available</li>
+        </ul>
+      </div>
+
+      <div class="col-6 card">
+        <h2>Review Process</h2>
+
+        <h3 style="margin-top:8px">1) Initial Screening</h3>
+        <p class="small">We check relevance to AI & health sciences, plagiarism, and formatting/completeness.</p>
+
+        <h3 style="margin-top:10px">2) Double-Blind Peer Review</h3>
+        <p class="small">2–3 trained reviewers evaluate literature search quality, inclusion/exclusion criteria, accuracy, clarity, bias.</p>
+
+        <h3 style="margin-top:10px">3) Editorial Decision</h3>
+        <p class="small">You will receive one of: Accept • Accept with revisions • Revise & resubmit • Reject with feedback</p>
+
+        <div class="note" style="margin-top:12px">
+          <strong>AI use policy:</strong> Submissions must be human-written. AI tools may be used for grammar checks, formatting, and reference organization — but not to generate text, analysis, or data.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="form">
+    <div class="card">
+      <h2>Online Submission Form (starter)</h2>
+      <p class="small">If you don’t have the real form wired yet, this can be a placeholder. Later we can connect it to email, Google Forms, or a database.</p>
+
+      <form onsubmit="event.preventDefault(); alert('Form submitted (demo). Hook this up to your real submission workflow.');">
+        <div class="grid">
+          <div class="col-6 field">
+            <label for="name">Author Name</label>
+            <input id="name" name="name" type="text" placeholder="Full name" required />
+          </div>
+          <div class="col-6 field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@email.com" required />
+          </div>
+          <div class="col-6 field">
+            <label for="type">Manuscript Type</label>
+            <select id="type" name="type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Systematic Review</option>
+              <option>Scoping Review</option>
+              <option>Narrative Literature Review</option>
+              <option>AI-in-Healthcare Analytical Paper</option>
+            </select>
+          </div>
+          <div class="col-6 field">
+            <label for="style">Citation Style</label>
+            <select id="style" name="style" required>
+              <option value="" disabled selected>Select one</option>
+              <option>APA</option>
+              <option>Vancouver</option>
+            </select>
+          </div>
+          <div class="col-12 field">
+            <label for="title">Manuscript Title</label>
+            <input id="title" name="title" type="text" placeholder="Your manuscript title" required />
+          </div>
+          <div class="col-12 field">
+            <label for="message">Notes (optional)</label>
+            <textarea id="message" name="message" placeholder="Anything you'd like the editorial team to know?"></textarea>
+          </div>
+          <div class="col-12" style="margin-top:14px;display:flex;justify-content:flex-end">
+            <button class="btn" type="submit">Submit (Demo)</button>
+          </div>
+        </div>
+      </form>
+
+      <p class="mini" style="margin-top:10px">
+        Note: Cloudflare Pages is static hosting. To accept actual file uploads, we’ll connect this to a real form solution (Google Forms, Formspree, or a simple backend).
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="col-8">
+        <strong>JAIBHS</strong>
+        <div class="mini">Rolling submissions • Student-run • Peer-reviewed</div>
+      </div>
+      <div class="col-4" style="text-align:right">
+        <a href="second.html">FAQ</a> • <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
