@@ -203,3 +203,67 @@ input:focus, textarea:focus{
 }
 
 .faq .ans p { margin-top: 8px; }
+/* --- HERO STACKED BUTTONS (force styles to apply) --- */
+.stack-actions{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:14px;
+}
+
+.stack-actions a.action-btn{
+  text-decoration:none !important;
+}
+
+.stack-actions .action-btn{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  width:100%;
+  padding:14px 14px;
+  border-radius:14px;
+  border:1px solid rgba(148,163,184,.22);
+  background: rgba(148,163,184,.08);
+  color: var(--text);
+  font-weight:750;
+  cursor:pointer;
+}
+
+.stack-actions .action-btn:hover{
+  border-color: rgba(56,189,248,.55);
+  background: rgba(56,189,248,.10);
+}
+
+.stack-actions .action-btn .sub{
+  margin-top:2px;
+  font-weight:650;
+  color: var(--muted);
+  font-size:.92rem;
+}
+
+.stack-actions .action-btn .arrow{
+  opacity:.9;
+  font-size:1.05rem;
+}
+
+.stack-actions .action-btn.primary{
+  border:1px solid rgba(56,189,248,.35);
+  background: linear-gradient(135deg, rgba(56,189,248,.18), rgba(96,165,250,.14));
+}
+
+.stack-actions .action-btn.primary:hover{
+  border-color: rgba(56,189,248,.70);
+}
+/* Header Logo */
+.site-logo{
+  height:80px;
+  width:auto;
+  display:block;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
