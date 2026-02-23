@@ -1,194 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Submit — JAIBHS</title>
-  <meta name="description" content="Submit your manuscript to the Journal of AI in Biomedical & Health Sciences (JAIBHS)." />
-
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Submit — JESM</title>
+<meta content="Submit your manuscript to the Journal of Emerging Scholars in Medicine (JESM)." name="description"/>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
-
 <header>
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="JAIBHS Logo" class="site-logo" />
-      <span>JAIBHS</span>
-    </a>
-
-    <nav class="navlinks">
-      <a href="index.html">Home</a>
-      <a href="second.html">Overview</a>
-      <a href="submit.html">Submit</a>
-      <a href="about.html">About</a>
-      <a class="btn" href="#form">Start a Submission →</a>
-    </nav>
-  </div>
+<div class="container nav">
+<a class="brand" href="index.html">
+<span>JESM</span>
+</a>
+<nav class="navlinks">
+<a href="index.html">Home</a>
+<a href="second.html">Overview</a>
+<a href="submit.html">Submit</a>
+<a href="about.html">About</a>
+<a class="btn" href="#form">Start a Submission →</a>
+</nav>
+</div>
 </header>
-
-
 <main class="container">
-
-  <section class="hero">
-    <div class="card">
-      <div class="kicker">SUBMISSIONS</div>
-      <h1>Submit Your Manuscript</h1>
-      <p class="lead">
+<section class="hero">
+<div class="card">
+<div class="kicker">SUBMISSIONS</div>
+<h1>Submit Your Manuscript</h1>
+<p class="lead">
         Complete the form below. You’ll then be redirected to upload
         your manuscript through our secure submission portal.
       </p>
-    </div>
-  </section>
-
-
-  <section class="section">
-    <div class="grid">
-
-      <div class="col-6 card">
-        <h2>Submission Requirements</h2>
-        <ul>
-          <li>Final manuscript in <strong>.docx or .pdf</strong></li>
-          <li>APA or Vancouver citation style</li>
-          <li>One file per submission</li>
-          <li>Rolling review (year-round)</li>
-        </ul>
-
-        <hr class="sep" />
-
-        <h2>Publication Fee</h2>
-        <p>
-          A <strong>$55 publication fee</strong> is requested only after acceptance.
-          No submission fees.
-        </p>
-      </div>
-
-
-      <div class="col-6 card">
-        <h2>Review Process</h2>
-
-        <h3>1) Initial Screening</h3>
-        <p class="small">
+</div>
+</section>
+<section class="section">
+<div class="grid">
+<div class="col-6 card">
+<h2>Submission Requirements</h2>
+<ul><li>Final manuscript in <strong>.docx or .pdf</strong></li><li>APA or Vancouver citation style</li><li>One file per submission</li><li>Submissions accepted year-round</li><li>Submit before July 15 → Fall Issue (Oct 15)</li><li>Submit before January 15 → Spring Issue (Apr 15). Late submissions roll into the next cycle.</li><li>Specific submission requirements, including format, can be found in our <a aria-label="Formatting guide (coming soon)" href="#">formatting guide</a> (coming soon).</li></ul>
+<div class="note" style="margin-top:12px">Mentors/teachers are not required as authors. If a mentor designed the study, performed analysis, wrote significant sections, or contributed intellectually, they should be included as a co-author. If they only provided guidance, include them in Acknowledgments.</div><hr class="sep"/>
+<h2>Publication Fees</h2>
+<ul><li>High School: $35 (after acceptance only)</li><li>Undergraduate: $55 (after acceptance only)</li><li>Fee waivers available upon request. Fees support DOI registration, hosting, and editorial infrastructure.</li></ul>
+</div>
+<div class="col-6 card">
+<h2>Review Process</h2>
+<h3>1) Initial Screening</h3>
+<p class="small">
           Scope, formatting, and completeness review.
         </p>
-
-        <h3 style="margin-top:8px">2) Peer Review</h3>
-        <p class="small">
+<h3 style="margin-top:8px">2) Peer Review</h3>
+<p class="small">
           2–3 reviewers evaluate quality and methodology.
         </p>
-
-        <h3 style="margin-top:8px">3) Decision</h3>
-        <p class="small">
+<h3 style="margin-top:8px">3) Decision</h3>
+<p class="small">
           Accept • Revise • Resubmit • Reject
         </p>
-
-        <div class="note" style="margin-top:12px">
+<div class="note" style="margin-top:12px">
           AI tools may be used for grammar and formatting only.
           AI-generated content is not permitted.
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" id="form">
-    <div class="card">
-
-      <div class="kicker">STEP 1</div>
-      <h2>Author & Manuscript Details</h2>
-
-      <p class="small">
+</div>
+</div>
+</section>
+<section class="section" id="form">
+<div class="card">
+<div class="kicker">STEP 1</div>
+<h2>Author &amp; Manuscript Details</h2>
+<p class="small">
         Fill this out first. You’ll then upload your manuscript.
       </p>
+<hr class="sep"/>
+<form id="customForm">
+<div class="grid">
+<div class="col-6 field">
+<label for="name">Full Name</label>
+<input id="name" required="" type="text"/>
+</div>
+<div class="col-6 field">
+<label for="email">Email</label>
+<input id="email" required="" type="email"/>
+</div>
+<div class="col-6 field">
+<label for="type">Manuscript Type</label>
+<select id="type" required="">
+<option disabled="" selected="" value="">Select</option>
 
-      <hr class="sep" />
 
-      <form id="customForm">
 
-        <div class="grid">
 
-          <div class="col-6 field">
-            <label for="name">Full Name</label>
-            <input id="name" type="text" required />
-          </div>
-
-          <div class="col-6 field">
-            <label for="email">Email</label>
-            <input id="email" type="email" required />
-          </div>
-
-          <div class="col-6 field">
-            <label for="type">Manuscript Type</label>
-            <select id="type" required>
-              <option value="" disabled selected>Select</option>
-              <option>Systematic Review</option>
-              <option>Scoping Review</option>
-              <option>Narrative Review</option>
-              <option>AI-in-Healthcare Analysis</option>
-            </select>
-          </div>
-
-          <div class="col-6 field">
-            <label for="style">Citation Style</label>
-            <select id="style" required>
-              <option value="" disabled selected>Select</option>
-              <option>APA</option>
-              <option>Vancouver</option>
-            </select>
-          </div>
-
-          <div class="col-12 field">
-            <label for="title">Manuscript Title</label>
-            <input id="title" type="text" required />
-          </div>
-
-          <div class="col-12 field">
-            <label for="notes">Notes (Optional)</label>
-            <textarea id="notes"></textarea>
-          </div>
-
-          <div class="col-12" style="margin-top:14px;text-align:right">
-            <button class="btn" type="submit">
+<option>Narrative Literature Review</option><option>Scoping Review</option><option>Systematic Review</option><option>Evidence-Based Analytical Paper</option></select>
+</div>
+<div class="col-6 field">
+<label for="style">Citation Style</label>
+<select id="style" required="">
+<option disabled="" selected="" value="">Select</option>
+<option>APA</option>
+<option>Vancouver</option>
+</select>
+</div>
+<div class="col-12 field">
+<label for="title">Manuscript Title</label>
+<input id="title" required="" type="text"/>
+</div>
+<div class="col-12 field">
+<label for="notes">Notes (Optional)</label>
+<textarea id="notes"></textarea>
+</div>
+<div class="col-12" style="margin-top:14px;text-align:right">
+<button class="btn" type="submit">
               Continue to Upload →
             </button>
-          </div>
-
-        </div>
-
-        <p class="mini" id="status" style="margin-top:10px"></p>
-      </form>
-
-    </div>
-  </section>
-
+</div>
+</div>
+<p class="mini" id="status" style="margin-top:10px"></p>
+</form>
+</div>
+</section>
 </main>
-
-
 <footer class="footer">
-  <div class="container">
-    <div class="grid">
-
-      <div class="col-8">
-        <strong>JAIBHS</strong>
-        <div class="mini">Journal of AI in Biomedical & Health Sciences</div>
-      </div>
-
-      <div class="col-4" style="text-align:right">
-        <a href="second.html">FAQ</a> •
+<div class="container">
+<div class="grid">
+<div class="col-8">
+<strong>JESM</strong>
+<div class="mini"> The Journal of Emerging Scholars in Medicine</div>
+</div>
+<div class="col-4" style="text-align:right">
+<a href="second.html">FAQ</a> •
         <a href="about.html">About</a>
-      </div>
-
+</div>
+</div>
+<div class="mini" style="margin-top:10px">
+      © JESM • Student-run • Peer-reviewed
     </div>
-
-    <div class="mini" style="margin-top:10px">
-      © JAIBHS • Student-run • Peer-reviewed
-    </div>
-  </div>
+</div>
 </footer>
-
-
 <script>
   const ENTRY = {
     name:  "entry.1492267953",
@@ -245,6 +192,5 @@
 
     });
 </script>
-
 </body>
 </html>
