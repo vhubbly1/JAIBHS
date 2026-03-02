@@ -1,83 +1,161 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Overview &amp; FAQ — JESM</title>
-<meta content="What JESM publishes, scope, and frequently asked questions." name="description"/>
-<link href="css/style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>Overview &amp; FAQ — JESM</title>
+  <meta content="What JESM publishes, scope, and frequently asked questions." name="description"/>
+  <link href="css/style.css" rel="stylesheet"/>
 </head>
+
 <body>
-<header>
-<div class="container nav">
-<a class="brand" href="index.html">
-<span>JESM</span>
-</a>
-<nav class="navlinks">
-<a href="index.html">Home</a>
-<a href="second.html">Overview</a>
-<a href="submit.html">Submit</a>
-<a href="about.html">About</a>
-<a class="btn" href="submit.html">Start a Submission →</a>
-</nav>
-</div>
-</header>
-<main class="container">
-<section class="hero">
-<div class="card">
-<div class="kicker">OVERVIEW</div>
-<h1>Scope, Publication Types, &amp; FAQ</h1>
-<p class="lead">JESM publishes peer-reviewed research exploring and discovering new findings, implications, and future directions in medical and health sciences research.</p>
-</div>
-</section>
-<section class="section">
-<div class="grid">
-<div class="col-6 card">
-<h2>What We Publish</h2>
-<ul><li>Narrative Literature Reviews</li><li>Scoping Reviews</li><li>Systematic Reviews</li><li>Evidence-Based Analytical Papers (ethics, policy, public health, medical education)</li></ul>
-<hr class="sep"/><p class="small">JESM does not currently publish original clinical data, patient case reports, or experimental laboratory studies.</p>
-</div>
-<div class="col-6 card">
-<h2>Who Should Submit?</h2>
-<ul><li>High-school students</li><li>Undergraduate students</li><li>First-time researchers</li><li>Students building an academic portfolio</li></ul>
-<hr class="sep"/><div class="note">Authorship and formatting guidance is provided on the Submit page and in our formatting guide (coming soon).</div></div>
-</div>
-</section>
-<section class="section">
-<div class="card">
-<h2>Frequently Asked Questions</h2>
-<p class="small">Click a question to expand.</p>
-<div class="faq" id="faq"><details><summary><span>Is this a real academic journal?</span><span class="chev">▾</span></summary><div class="ans"><p>Yes. JESM is a structured, peer-reviewed academic journal with editorial oversight and formal review standards. Acceptance is based on academic quality and reviewer evaluation.</p></div></details><details><summary><span>Who can submit?</span><span class="chev">▾</span></summary><div class="ans"><p>High school and undergraduate students. Early graduate students may submit appropriate work.</p></div></details><details><summary><span>Do I need original data?</span><span class="chev">▾</span></summary><div class="ans"><p>No. JESM primarily publishes literature-based and analytical research.</p></div></details><details><summary><span>Will I receive feedback?</span><span class="chev">▾</span></summary><div class="ans"><p>Yes — reviewers provide constructive feedback whenever possible.</p></div></details><details><summary><span>Are there submission fees?</span><span class="chev">▾</span></summary><div class="ans"><p>There is no fee to submit. Fees are only requested after acceptance.</p></div></details><details><summary><span>Can I use this for applications or conferences?</span><span class="chev">▾</span></summary><div class="ans"><p>Yes. The journal is designed to support future academic opportunities.</p></div></details><details><summary><span>Do you guarantee acceptance?</span><span class="chev">▾</span></summary><div class="ans"><p>No. All submissions undergo peer review and may be rejected.</p></div></details><details><summary><span>Will my paper be indexed?</span><span class="chev">▾</span></summary><div class="ans"><p>All accepted manuscripts receive a permanent digital link. DOI registration and formal indexing processes will be implemented as the journal expands.</p></div></details><details><summary><span>Can mentors be co-authors?</span><span class="chev">▾</span></summary><div class="ans"><p>Yes, if they contributed intellectually; otherwise, acknowledge them.</p></div></details></div>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="container">
-<div class="grid">
-<div class="col-8">
-<strong>JESM</strong>
-<div class="mini">Journal of AI in Biomedical &amp; Health Sciences</div>
-<div class="mini" style="margin-top:10px">© JESM • Student-run • Peer-reviewed</div>
-</div>
-<div class="col-4" style="text-align:right">
-<a href="submit.html">Submit</a> • <a href="about.html">About</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-  // Only one FAQ item open at a time (tight accordion behavior)
-  document.querySelectorAll('#faq details').forEach(d => {
-    d.addEventListener('toggle', () => {
-      if (d.open) {
-        document.querySelectorAll('#faq details').forEach(other => {
-          if (other !== d) other.removeAttribute('open');
-        });
-      }
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html"><span>JESM</span></a>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="second.html">Overview</a>
+        <a href="submit.html">Submit</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="submit.html">Start a Submission →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (TEXT ON IMAGE) -->
+  <section class="hero-banner full-bleed" style="background-image:url('images/hero.jpg');">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="kicker">OVERVIEW</div>
+        <h1>Scope, Publication Types, &amp; FAQ</h1>
+        <p class="lead">
+          JESM publishes peer-reviewed research exploring and discovering new findings, implications, and future directions in medical and health sciences research.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn gold" href="submit.html">Start a Submission →</a>
+          <a class="btn" href="#faqSection">Jump to FAQ →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section section-soft full-bleed">
+      <div class="container">
+        <h2>What We Publish</h2>
+        <ul>
+          <li>Narrative Literature Reviews</li>
+          <li>Scoping Reviews</li>
+          <li>Systematic Reviews</li>
+          <li>Evidence-Based Analytical Papers (ethics, policy, public health, medical education)</li>
+        </ul>
+        <hr class="sep"/>
+        <p class="small">
+          JESM does not currently publish original clinical data, patient case reports, or experimental laboratory studies.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-white full-bleed">
+      <div class="container">
+        <h2>Who Should Submit?</h2>
+        <ul>
+          <li>High-school students</li>
+          <li>Undergraduate students</li>
+          <li>First-time researchers</li>
+          <li>Students building an academic portfolio</li>
+        </ul>
+        <hr class="sep"/>
+        <div class="note">
+          Authorship and formatting guidance is provided on the Submit page and in our formatting guide (coming soon).
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft full-bleed" id="faqSection">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="small">Click a question to expand.</p>
+
+        <div class="faq" id="faq">
+          <details>
+            <summary><span>Is this a real academic journal?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>Yes. JESM is a structured, peer-reviewed academic journal with editorial oversight and formal review standards. Acceptance is based on academic quality and reviewer evaluation.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Who can submit?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>High school and undergraduate students. Early graduate students may submit appropriate work.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Do I need original data?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>No. JESM primarily publishes literature-based and analytical research.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Will I receive feedback?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>Yes — reviewers provide constructive feedback whenever possible.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Are there submission fees?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>There is no fee to submit. Fees are only requested after acceptance.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Can I use this for applications or conferences?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>Yes. The journal is designed to support future academic opportunities.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Do you guarantee acceptance?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>No. All submissions undergo peer review and may be rejected.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Will my paper be indexed?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>All accepted manuscripts receive a permanent digital link. DOI registration and formal indexing processes will be implemented as the journal expands.</p></div>
+          </details>
+
+          <details>
+            <summary><span>Can mentors be co-authors?</span><span class="chev">▾</span></summary>
+            <div class="ans"><p>Yes, if they contributed intellectually; otherwise, acknowledge them.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid">
+        <div class="col-8">
+          <strong>JESM</strong>
+          <div class="mini">The Journal of Emerging Scholars in Medicine</div>
+          <div class="mini" style="margin-top:10px">© JESM • Student-run • Peer-reviewed</div>
+        </div>
+        <div class="col-4" style="text-align:right">
+          <a href="submit.html">Submit</a> • <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Only one FAQ open at a time
+    document.querySelectorAll('#faq details').forEach(d => {
+      d.addEventListener('toggle', () => {
+        if (d.open) {
+          document.querySelectorAll('#faq details').forEach(other => {
+            if (other !== d) other.removeAttribute('open');
+          });
+        }
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
-```
